@@ -1,0 +1,148 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.navigation-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navigation-badge {
+  font-size: 10px;
+  line-height: 10px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #7DB54F;
+}
+
+.header-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  background-color: #756157;
+  text-transform: uppercase;
+  padding: 8px 34px;
+  border-radius: 4px;
+}
+
+.welcome {
+  background-image: url("../images/welcome-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #756157;
+  text-align: center;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.section-paragraph {
+  text-align: center;
+  color: #333333;
+}
+
+.reason-text {
+  text-align: center;
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.reason-text-blue {
+  background-color: #82B3D3;
+  color: #FFFFFF;
+}
+
+.reason-text-light-blue {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.reason-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+.reason-description {
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.reason-text-blue .reason-description {
+  color: #FFFFFF;
+}
+
+.feature-item {
+  text-align: center;
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.feature-item-light {
+  background-color: #FFFFFF;
+}
+
+.feature-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.feature-description {
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.button {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #756157;
+  text-decoration: none;
+  padding: 8px 50px;
+}
+
+.hotel-search {
+  text-align: center;
+}
+
+.subscription {
+  background-image: url("../images/subscription-backgroud.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  height: 415px;
+}
