@@ -125,6 +125,7 @@ body {
 }
 
 .button {
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -136,10 +137,24 @@ body {
   padding: 8px 50px;
   border-radius: 4px;
   border: none;
+  display: inline-block;
 }
 
 .button-blue {
   background-color: #82B3D3;
+}
+
+.button-transparent{
+  background-color: transparent;
+}
+
+.button-green {
+  background-color: #7DB54F;;
+}
+
+.button-small {
+  font-size: 16px;
+  line-height: 20px
 }
 
 .hotel-search {
@@ -169,4 +184,92 @@ body {
 .phone-number-link {
   color: #000000;
   text-decoration: none;
+}
+
+.inner-header {
+  background-image: url("../images/catalog-bacground.jpg");
+  background-color: #756157;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #FFFFFF;
+}
+
+.inner-header-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.catalog-filter-title{
+  font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+text-transform: capitalize;
+}
+
+.catalog-filter-item {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.catalog-title{
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.hotel-name {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.hotel-type {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.hotel-price {
+  font-size: 18px;
+  line-height: 21px;
+  text-align: right
+}
+
+.hotel-item .button {
+  width: 140px;
+  padding: 8px;
+}
+
+.hotel-rate {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pagination-link {
+  font-size: 20px;
+line-height: 36px;
+text-align: center;
+text-transform: uppercase;
+color:#FFFFFF ;
+background-color: #82B3D3;
+text-decoration: none;
+}
+
+.pagination-current {
+  color: #000000;
+  background-color: #F2F2F2;
+}
+
+ .pagination-empty .pagination-link{
+  background-color: #FFFFFF;
+  color: #000000;
 }
