@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Седона - главная страница</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
 
@@ -45,7 +46,7 @@
         </p>
         <ul class="reasons-list">
           <li class="reason-item">
-            <div class="reason-text">
+            <div class="reason-text reason-text-blue">
               <h3 class="reason-title">Настоящий городок</h3>
               <p class="reason-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
@@ -57,7 +58,7 @@
             </div>
           </li>
           <li class="reason-item">
-            <div class="reason-text">
+            <div class="reason-text reason-text-light-blue">
               <h3 class="reason-title">Красивая дорога</h3>
               <p class="reason-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </div>
@@ -69,7 +70,7 @@
             </div>
           </li>
           <li class="reason-item">
-            <div class="reason-text">
+            <div class="reason-text reason-text-blue">
               <h3 class="reason-title">Там есть мост дьявола</h3>
               <p class="reason-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             </div>
@@ -85,14 +86,14 @@
         </p>
         <ul class="feature-list">
           <li class="feature-item">
-            <img src="images/advantage-house.svg" alt="Жилье" class="feature-image" width="75px" height="72px">
-            <h3 class="feature-title">Жилье</h3>
+            <img src="images/advantage-house.svg" alt="Жильё" class="feature-image" width="75px" height="72px">
+            <h3 class="feature-title">Жильё</h3>
             <p class="feature-description">
               Рекомендуем пожить в настоящем мотеле,
               всё как в кино!
             </p>
           </li>
-          <li class="feature-item">
+          <li class="feature-item feature-item-light">
             <img src="images/advantage-burger.svg" alt="Еда" class="feature-image" width="74px" height="70px">
             <h3 class="feature-title">Еда</h3>
             <p class="feature-description">
@@ -113,9 +114,9 @@
       <section class="hotel-search">
         <h2 class="section-title">Заинтересовались?</h2>
         <p class="section-paragraph">
-          Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
+          Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
-        <button class="hotel-search-button" type="button" >Поиск гостинницы в Седоне</button>
+        <a href="catalog.html" class="button">Поиск гостинницы в Седоне</a>
       </section>
       <section class="subscription">
         <h2 class="section-title">Подпишитесь на рассылку</h2>
@@ -125,7 +126,7 @@
         <form action="https://echo.htmlacademy.ru" method="post" class="subscription-form">
           <label class="visually-hidden" for="email">Ваш e-mail</label>
           <input type="email" id="email" name="email" required placeholder="Ваш e-mail" class="subscription-input">
-          <button class="subscription-submit">Подписаться</button>
+          <button class="subscription-submit button button-blue">Подписаться</button>
         </form>
       </section>
     </main>
