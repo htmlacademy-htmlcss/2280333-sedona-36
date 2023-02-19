@@ -122,9 +122,33 @@ button {
   color: #333333;
 }
 
+.reasons-list{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.reason-item{
+  width: 400px;
+  list-style: none;
+}
+
+.reason-item:first-child,
+.reason-item:last-child{
+  justify-content: space-between;
+  display: flex;
+  width: 100%;}
+
+
 .reason-text {
   text-align: center;
   background-color: rgba(131, 179, 211, 0.12);
+}
+
+.reason-text{
+  width: 400px;
 }
 
 .reason-text-blue {
@@ -152,9 +176,17 @@ button {
   color: #FFFFFF;
 }
 
+.feature-list{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+
 .feature-item {
   text-align: center;
   background-color: rgba(131, 179, 211, 0.12);
+  width: 400px;
 }
 
 .feature-item-light {
@@ -222,6 +254,11 @@ button {
 .subscription .section-title,
 .subscription .section-paragraph {
   color:#FFFFFF;
+}
+
+.subscription-form{
+  width: 684px;
+  margin: auto;
 }
 
 .phone-number {
@@ -322,4 +359,17 @@ text-decoration: none;
  .pagination-empty .pagination-link{
   background-color: #FFFFFF;
   color: #000000;
+}
+
+.page-footer{
+  display: flex;
+  padding-left: 70px;
+  padding-right: 70px;
+  justify-content: space-between;
+}
+
+.social-icons{
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
