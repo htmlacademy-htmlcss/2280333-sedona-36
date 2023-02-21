@@ -251,9 +251,19 @@ button {
   height: 415px;
 }
 
+.subscription-light{
+  background-image: none;
+  background-color: #FFFFFF;
+}
+
 .subscription .section-title,
 .subscription .section-paragraph {
   color:#FFFFFF;
+}
+
+.subscription-light .section-title,
+.subscription-light .section-paragraph {
+  color:#000000;
 }
 
 .subscription-form{
@@ -280,6 +290,8 @@ button {
   background-position: center;
   background-size: cover;
   color: #FFFFFF;
+  padding-left: 70px;
+  padding-right: 70px;
 }
 
 .inner-header-title {
@@ -294,6 +306,28 @@ button {
   color: #FFFFFF;
 }
 
+.catalog{
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.catalog-filter{
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-filter-group{
+  width: 160px;
+}
+
+.catalog-filter-group-wide{
+  width: 290px;
+}
+
+.catalog-filter-buttons{
+  width: 195px;
+}
+
 .catalog-filter-title{
   font-weight: 700;
 font-size: 20px;
@@ -306,11 +340,35 @@ text-transform: capitalize;
   line-height: 23px;
 }
 
+.catalog-filter-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .catalog-title{
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  flex-grow: 1;
+}
+
+.catalog-top{
+  display: flex;
+}
+
+.hotel-list{
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.hotel-item{
+  width: 340px;
 }
 
 .hotel-name {
@@ -341,14 +399,31 @@ text-transform: capitalize;
   text-transform: uppercase;
 }
 
+.hotel-stars{
+  color: #83B3D3;
+}
+
+.pagination{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pagination-item{
+  width: 60px;
+  margin-right: 8px;
+}
+
 .pagination-link {
+  display: block;
   font-size: 20px;
-line-height: 36px;
-text-align: center;
-text-transform: uppercase;
-color:#FFFFFF ;
-background-color: #82B3D3;
-text-decoration: none;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color:#FFFFFF ;
+  background-color: #82B3D3;
+  text-decoration: none;
 }
 
 .pagination-current {
@@ -371,5 +446,18 @@ text-decoration: none;
 .social-icons{
   margin: 0;
   padding: 0;
+  list-style: none;
+}
+
+.select-control{
+  width: 292px;
+}
+
+.view-switch-list{
+  width: 160px;
+  padding: 0;
+  margin: 0;
+  margin-left: 70px;
+  margin-right: ;
   list-style: none;
 }
