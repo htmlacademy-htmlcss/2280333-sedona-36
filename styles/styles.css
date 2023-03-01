@@ -360,6 +360,9 @@ button {
   color:#000000;
 }
 
+.subscription-light .subscription-input{
+  background: #F2F2F2;
+}
 
 .subscription-form{
   display: flex;
