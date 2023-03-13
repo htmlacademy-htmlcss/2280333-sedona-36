@@ -50,17 +50,23 @@
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="checkbox" name="pool" checked> Бассейн
+                        <input class="control-input visually-hidden" type="checkbox" name="pool" checked>
+                        <span class="control-checkbox"></span>
+                        <span class="control-label">Бассейн</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="checkbox" name="parking" checked> Парковка
+                        <input class="control-input visually-hidden" type="checkbox" name="parking" checked>
+                        <span class="control-checkbox"></span>
+                        <span class="control-label">Парковка</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="checkbox" name="wi-fi"> Wi-Fi
+                        <input class="control-input visually-hidden" type="checkbox" name="wi-fi">
+                        <span class="control-checkbox"></span>
+                        <span class="control-label">Wi-Fi</span>
                       </label>
                     </li>
                   </ul>
@@ -70,31 +76,50 @@
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="radio" name="housing-type" value="Hotel" checked> Гостиница
+                        <input class="control-input visually-hidden" type="radio" name="housing-type" value="Hotel" checked>
+                        <span class="control-radio"></span>
+                        <span class="control-label">Гостиница</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="radio" name="housing-type" value="motel"> Мотель
+                        <input class="control-input visually-hidden" type="radio" name="housing-type" value="motel">
+                        <span class="control-radio"></span>
+                        <span class="control-label">Мотель</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="radio" name="housing-type"> Апартаменты
+                        <input class="control-input visually-hidden" type="radio" name="housing-type">
+                        <span class="control-radio"></span>
+                        <span class="control-label">Апартаменты</span>
                       </label>
                     </li>
                   </ul>
                 </fieldset>
                 <fieldset class="catalog-filter-group-wide">
                   <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-                  <label class="control">
-                    <input class="control-input" type="text" name="price-min" value="0">
-                    <span class="control-input-text">от</span>
-                  </label>
-                  <label class="control">
-                    <input class="control-input" type="text" name="price-max" value="9000">
-                    <span class="control-input-text">до</span>
-                  </label>
+                  <div class="catalog-filter-price">
+                    <label class="price-label">
+                      <input class="price-input price-input-min" type="text" name="price-min" value="0">
+                      <span class="price-input-text">от</span>
+                    </label>
+                    <label class="price-label">
+                      <input class="price-input price-input-max" type="text" name="price-max" value="9000">
+                      <span class="price-input-text">до</span>
+                    </label>
+                  </div>
+                  <div class="range">
+                    <div class="range-scale">
+                      <div class="range-bar" style="left: 0px; width: 226px">
+                        <button class="range-toggle toggle-min">
+                          <span class="visually-hidden">Изменить минимальную цену.</span>
+                        </button>
+                        <button class="range-toggle toggle-max">
+                          <span class="visually-hidden">Изменить максимальную цену.</span>
+                        </button>
+                      </div>
+                    </div>
                 </fieldset>
                 <div class="catalog-filter-buttons">
                   <button class="catalog-filter-submit button button-blue button-small" type="submit">Применить</button>
@@ -136,7 +161,12 @@
                   <div class="hotel-price">От 4000 ₽</div>
                   <a href="#" class="button button-small">Подробнее</a>
                   <button type="button" class="button button-blue button-small">В избранное</button>
-                  <div class="hotel-stars">✭✭✭✭</div>
+                  <ul class="hotel-stars">
+                    <li class="hotel-stars-item"></li>
+                    <li class="hotel-stars-item"></li>
+                    <li class="hotel-stars-item"></li>
+                    <li class="hotel-stars-item"></li>
+                  </ul>
                   <div class="hotel-rate">Рейтинг: 8,5</div>
                 </li>
                 <li class="hotel-item">
@@ -146,7 +176,12 @@
                   <div class="hotel-price">От 5000 ₽</div>
                   <a href="#" class="button button-small">Подробнее</a>
                   <button type="button" class="button button-green button-small">В избранном</button>
-                  <div class="hotel-stars">✭✭✭✭</div>
+                  <ul class="hotel-stars">
+                    <li class="hotel-stars-item"></li>
+                    <li class="hotel-stars-item"></li>
+                    <li class="hotel-stars-item"></li>
+                    <li class="hotel-stars-item"></li>
+                  </ul>
                   <div class="hotel-rate">Рейтинг: 9.2</div>
                 </li>
                 <li class="hotel-item">
@@ -156,7 +191,11 @@
                   <div class="hotel-price">От 2500 ₽</div>
                   <a href="#" class="button button-small">Подробнее</a>
                   <button type="button" class="button button-small button-blue">В избранное</button>
-                  <div class="hotel-stars">✭✭✭</div>
+                  <ul class="hotel-stars">
+                    <li class="hotel-stars-item"></li>
+                    <li class="hotel-stars-item"></li>
+                    <li class="hotel-stars-item"></li>
+                  </ul>
                   <div class="hotel-rate">Рейтинг: 6.9</div>
                 </li>
                 <li class="hotel-item">
@@ -166,7 +205,10 @@
                   <div class="hotel-price">От 1500 ₽</div>
                   <a href="#" class="button button-small">Подробнее</a>
                   <button type="button" class="button button-blue button-small">В избранное</button>
-                  <div class="hotel-stars">✭✭</div>
+                  <ul class="hotel-stars">
+                    <li class="hotel-stars-item"></li>
+                    <li class="hotel-stars-item"></li>
+                  </ul>
                   <div class="hotel-rate">Рейтинг: 5.0</div>
                 </li>
               </ul>
