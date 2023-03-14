@@ -2,18 +2,19 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="icon" href="favicon.ico">
     <title>Седона - главная страница</title>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <div class="container">
       <header class="page-header">
-        <img src="images/logo.svg" alt="Логотип Седона" class="logo" width="140px" height="70px">
+        <img src="images/logo.svg" alt="Логотип Седона" class="logo" width="140" height="70">
         <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-item active"><a href="#" class="navigation-link">Главная</a></li>
             <li class="navigation-item"><a href="#" class="navigation-link">О Седоне</a></li>
-            <li class="navigation-item"><a href="#" class="navigation-link">Гостиницы</a></li>
+            <li class="navigation-item"><a href="catalog.html" class="navigation-link">Гостиницы</a></li>
           </ul>
           <ul class="navigation-icons">
             <li class="navigation-item navigation-search">
@@ -34,7 +35,7 @@
         <h1 class="visually-hidden">Городок Седона</h1>
         <section class="welcome">
           <h2 class="visually-hidden">Welcome to Sedona</h2>
-          <img src="images/welcome.svg" alt="welcome to Sedona" class="welcome-image" width="458px" height="352px">
+          <img src="images/welcome.svg" alt="welcome to Sedona" class="welcome-image" width="458" height="352">
         </section>
         <section class="reasons">
           <h2 class="section-title">
@@ -50,7 +51,7 @@
                 <h3 class="reason-title">Настоящий городок</h3>
                 <p class="reason-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
-              <img src="images/advantages-1.jpg" alt="Настоящий городок Седона" width="800px" height="385px">
+              <img src="images/advantages-1.jpg" alt="Настоящий городок Седона" width="800" height="385">
             </li>
             <li class="reason-item">
               <div class="reason-text">
@@ -71,7 +72,7 @@
               </div>
             </li>
             <li class="reason-item">
-              <img src="images/advantages-2.jpg" alt="Мост дьявола" width="800px" height="385px">
+              <img src="images/advantages-2.jpg" alt="Мост дьявола" width="800" height="385">
               <div class="reason-text reason-text-blue">
                 <h3 class="reason-title">Там есть мост дьявола</h3>
                 <p class="reason-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
@@ -81,14 +82,14 @@
         </section>
         <section class="features">
           <h2 class="section-title">
-            Приезжайте в Седону отдохнуть в комфорте и уюте!
+            Приезжайте в Седону отдохнуть<br>в комфорте и уюте!
           </h2>
           <p class="section-paragraph">
             Опытный персонал и качественное обслуживание!
           </p>
           <ul class="feature-list">
             <li class="feature-item">
-              <img src="images/advantage-house.svg" alt="Жильё" class="feature-image" width="75px" height="72px">
+              <img src="images/advantage-house.svg" alt="Жильё" class="feature-image" width="75" height="72">
               <h3 class="feature-title">Жильё</h3>
               <p class="feature-description">
                 Рекомендуем пожить в настоящем мотеле,
@@ -96,7 +97,7 @@
               </p>
             </li>
             <li class="feature-item feature-item-light">
-              <img src="images/advantage-burger.svg" alt="Еда" class="feature-image" width="74px" height="70px">
+              <img src="images/advantage-burger.svg" alt="Еда" class="feature-image" width="74" height="70">
               <h3 class="feature-title">Еда</h3>
               <p class="feature-description">
                 Всегда заказывайте
@@ -104,7 +105,7 @@
               </p>
             </li>
             <li class="feature-item">
-              <img src="images/advantage-box.svg" alt="Сувениры" class="feature-image" width="64px" height="76px">
+              <img src="images/advantage-box.svg" alt="Сувениры" class="feature-image" width="64" height="76">
               <h3 class="feature-title">Сувениры</h3>
               <p class="feature-description">
                 Не только китайского,
@@ -165,6 +166,56 @@
         </div>
       </footer>
     </div>
+
+<div class="modal-container modal-hidden">
+  <div class="modal">
+    <button class="modal-close-button">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
+    <section class="modal-content">
+      <h2 class="modal-title"> Поиск гостинницы в Седоне</h2>
+      <form action="https://echo.htmlacademy.ru" method="post" class="modal-form">
+        <label class="modal-form-label label-arrival-date" for="arrival-date">Дата заезда:</label>
+        <div class="input-date-wrapper input-arrival-date">
+          <input type="text" id="arrival-date" name="arrival-date" placeholder="Укажите дату" class="input-date">
+          <button class="input-date-button" type="button">
+            <span class="visually-hidden">Открыть календарь</span>
+          </button>
+          <div class="modal-form-message modal-form-error">Мы не можем отправить вас в прошлое.</div>
+        </div>
+        <label class="modal-form-label label-departure-date" for="departure-date">Дата выезда:</label>
+        <div class="input-date-wrapper input-departure-date">
+          <input type="text" id="departure-date" name="departure-date" placeholder="Укажите дату" class="input-date">
+          <button class="input-date-button" type="button">
+            <span class="visually-hidden">Открыть календарь</span>
+          </button>
+          <div class="modal-form-message">На эти даты есть свободные номера. Пока есть.</div>
+        </div>
+        <label for="adult" class="modal-form-label">Взрослые:</label>
+        <div class="input-count-wrapper">
+          <input type="text" id="adult" name="adult" class="input-count" value="2">
+          <button type="button" class="input-count-button input-count-minus"><span class="visually-hidden">-</span></button>
+          <button type="button" class="input-count-button input-count-plus"><span class="visually-hidden">+</span></button>
+        </div>
+        <label for="kids" class="modal-form-label modal-form-label-kids">
+          <span class="label-text">Дети:</span>
+          <span class="label-tooltip">
+            <span class="label-tooltip-text">
+              Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+            </span>
+          </span>
+        </label>
+        <div class="input-count-wrapper">
+          <input type="text" id="kids" name="kids" class="input-count" value="2">
+          <button type="button" class="input-count-button input-count-minus"><span class="visually-hidden">-</span></button>
+          <button type="button" class="input-count-button input-count-plus"><span class="visually-hidden">+</span></button>
+        </div>
+        <button type="submit" class="modal-form-submit">Найти</button>
+      </form>
+    </section>
+  </div>
+</div>
+
 
   </body>
 </html>
