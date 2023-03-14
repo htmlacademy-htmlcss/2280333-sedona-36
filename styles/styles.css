@@ -803,7 +803,7 @@ padding: 0;
 .control-input:checked + .control-checkbox{
   background-image: url('../images/checkbox-checked.svg');
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 4px 5px;
 }
 
 .control-input:disabled + .control-checkbox,
