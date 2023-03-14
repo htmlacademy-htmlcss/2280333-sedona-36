@@ -1114,6 +1114,10 @@ padding: 0;
   z-index: 20;
 }
 
+.modal-hidden{
+  display: none;
+}
+
 .modal{
   width: 717px;
   padding: 64px 70px;
@@ -1335,6 +1339,7 @@ color: #333333;
 
 .modal-form-label-kids{
   grid-column: 4 / 5;
+  display: flex;
 }
 
 .label-tooltip{
