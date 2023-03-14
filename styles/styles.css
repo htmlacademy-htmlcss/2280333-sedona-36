@@ -42,10 +42,6 @@ body {
   overflow: hidden;
 }
 
-button {
-  font-family: "PT Sans", sans-serif;
-}
-
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -142,6 +138,7 @@ button {
 }
 
 .header-button {
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -352,7 +349,7 @@ button {
 }
 
 .button {
-  font-family: "PT Sans", sans-serif;
+  font-family: inherit;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
