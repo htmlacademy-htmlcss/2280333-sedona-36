@@ -50,6 +50,7 @@ button {
   width: 1200px;
   margin: 0 auto;
   background-color: #FFFFFF;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 
 .main-container {
@@ -58,7 +59,8 @@ button {
 
 .page-header {
   display: flex;
-  height: 64px;
+  min-height: 64px;
+  margin-bottom: -6px;
 }
 
 .logo {
@@ -174,6 +176,7 @@ button {
   background-size: cover;
   background-color: #756157;
   text-align: center;
+  min-height: 485px;
 }
 
 .welcome::after{
@@ -190,7 +193,6 @@ button {
 
 .welcome-image{
   margin-top: 51px;
-  margin-bottom: 82px;
 }
 
 .section-title {
@@ -432,7 +434,7 @@ button {
 }
 
 .hotel-search .button {
-  margin-top: 62px;
+  margin-top:54px;
 }
 
 .hotel-search {
@@ -617,6 +619,7 @@ button {
   padding-left: 70px;
   padding-right: 70px;
   padding-top: 50px;
+  padding-bottom:60px;
 }
 
 .catalog-filter{
@@ -775,6 +778,7 @@ padding: 0;
 
 .catalog-top{
   display: flex;
+  align-items: center;
   margin-bottom: 40px;
 }
 
@@ -1014,7 +1018,7 @@ padding: 0;
   color: #333333;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
-  padding: 14px 52px 14px 20px;
+  padding: 12px 52px 12px 20px;
   box-sizing: border-box;
   background-image: url('../images/icons-arrow-down.svg');
   background-repeat: no-repeat;
@@ -1076,7 +1080,7 @@ padding: 0;
 
 .view-switch-link{
   display: block;
-  height: 48px;
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
 }
