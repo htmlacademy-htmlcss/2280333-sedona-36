@@ -852,11 +852,13 @@ body {
 
 .control-radio {
   display: inline-block;
+  min-width: 20px;
   width: 20px;
   height: 20px;
   border-radius: 50%;
   background: #ffffff;
   margin-right: 16px;
+  margin-top: 3px;
 }
 
 .control:focus .control-radio {
