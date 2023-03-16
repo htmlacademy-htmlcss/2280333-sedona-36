@@ -850,6 +850,11 @@ body {
   opacity: 0.3;
 }
 
+.control-input:active + .control-checkbox,
+.control-input:active ~ .control-label {
+  opacity: 0.3;
+}
+
 .control-radio {
   display: inline-block;
   min-width: 20px;
@@ -875,6 +880,12 @@ body {
 .control-input:disabled ~ .control-label {
   opacity: 0.3;
 }
+
+.control-input:active + .control-radio,
+.control-input:active ~ .control-label {
+  opacity: 0.3;
+}
+
 
 .hotel-list {
   display: grid;
