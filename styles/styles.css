@@ -835,7 +835,7 @@ body {
   opacity: 0.6
 }
 
-.control:focus .control-checkbox {
+.control-input:focus + .control-checkbox {
   outline: 3px solid #83b3d3;
 }
 
@@ -861,7 +861,7 @@ body {
   margin-top: 3px;
 }
 
-.control:focus .control-radio {
+.control-input:focus + .control-radio {
   outline: 3px solid #83b3d3;
 }
 
