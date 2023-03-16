@@ -89,15 +89,14 @@
             Опытный персонал и качественное обслуживание!
           </p>
           <ul class="feature-list">
-            <li class="feature-item">
-              <img class="feature-image" src="images/advantage-house.svg" alt="Жильё." width="75" height="72">
+            <li class="feature-item feature-item-house">
               <h3 class="feature-title">Жильё</h3>
               <p class="feature-description">
                 Рекомендуем пожить в настоящем мотеле,
                 всё как в кино!
               </p>
             </li>
-            <li class="feature-item feature-item-light">
+            <li class="feature-item feature-item-light feature-item-burger">
               <img class="feature-image" src="images/advantage-burger.svg" alt="Еда." width="74" height="70">
               <h3 class="feature-title">Еда</h3>
               <p class="feature-description">
@@ -105,7 +104,7 @@
                 топовый фирменный бургер, вы не разочаруетесь!
               </p>
             </li>
-            <li class="feature-item">
+            <li class="feature-item feature-item-box">
               <img class="feature-image" src="images/advantage-box.svg" alt="Сувениры." width="64" height="76">
               <h3 class="feature-title">Сувениры</h3>
               <p class="feature-description">
@@ -195,21 +194,21 @@
             <label class="modal-form-label" for="adult">Взрослые:</label>
             <div class="input-count-wrapper">
               <input class="input-count" type="text" id="adult" name="adult" value="2">
-              <button class="input-count-button input-count-minus" type="button"><span class="visually-hidden">-</span></button>
-              <button class="input-count-button input-count-plus" type="button"><span class="visually-hidden">+</span></button>
+              <button class="input-count-button input-count-minus" type="button"><span class="visually-hidden">Уменьшить количество взрослых.</span></button>
+              <button class="input-count-button input-count-plus" type="button"><span class="visually-hidden">Увеличить количество взрослых.</span></button>
             </div>
             <label class="modal-form-label modal-form-label-kids" for="kids">
               <span class="label-text">Дети:</span>
-              <span class="label-tooltip">
+              <button class="label-tooltip" type="button">
                 <span class="label-tooltip-text">
                   Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
                 </span>
-              </span>
+              </button>
             </label>
             <div class="input-count-wrapper">
               <input class="input-count" type="text" id="kids" name="kids" value="2">
-              <button class="input-count-button input-count-minus" type="button"><span class="visually-hidden">-</span></button>
-              <button class="input-count-button input-count-plus" type="button"><span class="visually-hidden">+</span></button>
+              <button class="input-count-button input-count-minus" type="button"><span class="visually-hidden">Уменьшить количество детей.</span></button>
+              <button class="input-count-button input-count-plus" type="button"><span class="visually-hidden">Увеличить количество детей.</span></button>
             </div>
             <button class="modal-form-submit" type="submit">Найти</button>
           </form>
