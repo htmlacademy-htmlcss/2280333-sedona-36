@@ -109,12 +109,16 @@ body {
 }
 
 .navigation-search .navigation-link {
+  margin-top:2px;
+  margin-right: 23px;
   background-image: url("../images/icons-search.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .navigation-fav .navigation-link {
+  margin-top:2px;
+  margin-right: 0;
   background-image: url("../images/icons-heart.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -132,8 +136,8 @@ body {
 .navigation-badge {
   display: block;
   position: absolute;
-  top: 11px;
-  right: -10px;
+  top: 9px;
+  right: -8px;
   box-sizing: border-box;
   padding-top: 5px;
   font-size: 10px;
@@ -156,7 +160,9 @@ body {
   text-transform: uppercase;
   padding: 8px 34px;
   border-radius: 4px;
-  margin-right: 70px;
+  margin-top: -6px;
+  margin-right: 71px;
+  margin-left: 12px;
   border: none;
   align-self: center;
   cursor: pointer;
@@ -314,6 +320,10 @@ body {
   margin-bottom: 20px;
 }
 
+.features .section-paragraph {
+  margin-top: 0;
+}
+
 .feature-list {
   margin: 0;
   padding: 0;
@@ -458,6 +468,8 @@ body {
 
 .hotel-search .button {
   margin-top: 54px;
+  box-sizing: border-box;
+  min-width: 376px;
 }
 
 .hotel-search {
@@ -525,6 +537,10 @@ body {
 .subscription-input {
   flex-grow: 1;
   font-family: inherit;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
   background-color: #f2f2f2;
   border: none;
   border-radius: 4px 0 0 4px;
@@ -533,6 +549,11 @@ body {
 
 .subscription-input:hover {
   background-color: #e6e6e6;
+}
+
+.subscription-input::placeholder {
+  color: #000000;
+  opacity: 0.6;
 }
 
 .phone-number {
@@ -556,6 +577,9 @@ body {
   color: rgba(117, 97, 87, 0.3);
 }
 
+.developer-logo-image {
+  margin-top: 3px
+}
 
 .developer-logo-link:hover path,
 .developer-logo-link:focus path {
@@ -577,11 +601,12 @@ body {
   padding-left: 70px;
   padding-right: 70px;
   padding-top: 35px;
-  padding-bottom: 73px;
+  padding-bottom: 70px;
 }
 
 .inner-header-title {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
@@ -646,21 +671,26 @@ body {
 
 .catalog-filter {
   display: flex;
-  justify-content: space-between;
 }
 
 .catalog-filter-group {
-  width: 160px;
-  margin: 0;
+  width: 200px;
+  margin: 0 20px 0 0;
   padding: 0;
   border: none;
 }
 
 .catalog-filter-group-wide {
   width: 290px;
-  margin: 0;
+  margin: 0 0 0 auto;
   padding: 0;
   border: 0;
+}
+
+.catalog-filter-buttons {
+  width: 190px;
+  padding-top: 56px;
+  margin-left: 70px;
 }
 
 .catalog-filter-price {
@@ -721,7 +751,7 @@ body {
 }
 
 .range {
-  margin-top: 48px;
+  margin-top: 44px;
 }
 
 .range-scale {
@@ -770,11 +800,6 @@ body {
   right: 0;
 }
 
-.catalog-filter-buttons {
-  width: 195px;
-  margin-top: 56px;
-}
-
 .catalog-filter-title {
   font-weight: 700;
   font-size: 20px;
@@ -802,6 +827,10 @@ body {
 
 .catalog-filter-submit {
   margin-bottom: 32px;
+}
+
+.catalog-filter-reset {
+  width: 100%;
 }
 
 .catalog-title {
@@ -833,7 +862,7 @@ body {
   margin-right: 16px;
   background: #ffffff;
   border-radius: 4px;
-  margin-top: 3px;
+  margin-top: 2px;
 }
 
 .control:hover {
@@ -868,7 +897,7 @@ body {
   border-radius: 50%;
   background: #ffffff;
   margin-right: 16px;
-  margin-top: 3px;
+  margin-top: 2px;
 }
 
 .control-input:focus + .control-radio {
@@ -906,7 +935,7 @@ body {
   display: grid;
   grid-template-columns: 140px 140px;
   grid-template-rows: 212px min-content min-content 1fr 1fr;
-  gap: 16px 20px;
+  gap: 15px 20px;
   border: 1px solid #e6e6e6;
   border-radius: 4px;
   padding: 20px;
@@ -1223,7 +1252,7 @@ body {
 
 .modal-form {
   display: grid;
-  grid-template-columns: 1fr 110px 88px 1fr 110px;
+  grid-template-columns: 137px 110px 88px 1fr 110px;
   grid-template-rows: 1fr 1fr 1fr 60px;
   row-gap: 23px;
 }
@@ -1413,7 +1442,8 @@ body {
   height: 26px;
   background-color: #83b3d3;
   border-radius: 50%;
-  margin-left: 10px;
+  margin-left: 11px;
+  margin-top:-1px;
   background-image: url("../images/tooltip.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -1425,7 +1455,8 @@ body {
 .label-tooltip-text {
   display: none;
   position: absolute;
-  width: 216px;
+  width: 256px;
+  box-sizing: border-box;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1434,8 +1465,8 @@ body {
   background: #333333;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
-  padding: 15px 18px 18px 22px;
-  top: 42px;
+  padding: 22px;
+  top: 40px;
   left: -115px;
   text-transform: none;
   text-align: left;
