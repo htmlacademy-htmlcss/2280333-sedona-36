@@ -348,6 +348,20 @@ body {
   padding-top: 72px;
 }
 
+.feature-item-burger {
+  background-image: url("../images/advantage-burger.svg");
+  background-repeat: no-repeat;
+  background-position: center 81px;
+  padding-top: 72px;
+}
+
+.feature-item-box {
+  background-image: url("../images/advantage-box.svg");
+  background-repeat: no-repeat;
+  background-position: center 81px;
+  padding-top: 72px;
+}
+
 .feature-title {
   font-weight: 700;
   font-size: 24px;
