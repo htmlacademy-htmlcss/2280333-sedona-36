@@ -50,14 +50,14 @@ body {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
-.main-container {
-  flex-grow: 1;
-}
-
 .page-header {
   display: flex;
   min-height: 64px;
   margin-bottom: -6px;
+}
+
+.page-content {
+  flex-grow: 1;
 }
 
 .logo {
@@ -294,7 +294,6 @@ body {
   width: 60px;
   height: 2px;
   background: rgba(0, 0, 0, 0.3);
-
 }
 
 .reason-text-blue .reason-title::after {
@@ -477,7 +476,7 @@ body {
 
 .button-small {
   font-size: 16px;
-  line-height: 20px
+  line-height: 20px;
 }
 
 .hotel-search .button {
@@ -592,7 +591,7 @@ body {
 }
 
 .developer-logo-image {
-  margin-top: 3px
+  margin-top: 3px;
 }
 
 .developer-logo-link:hover path,
@@ -603,7 +602,6 @@ body {
 .developer-logo-link:active path {
   fill: rgba(117, 97, 87, 0.3);
 }
-
 
 .inner-header {
   background-image: url("../images/catalog-bacground.jpg");
@@ -634,11 +632,11 @@ body {
 }
 
 .breadcrumbs-link:hover {
-  color: rgba(255, 255, 255, 0.6)
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .breadcrumbs-link:active {
-  color: rgba(255, 255, 255, 0.3)
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .breadcrumbs-link:hover path {
@@ -646,9 +644,8 @@ body {
 }
 
 .breadcrumbs-link:active path {
-  fill: rgba(255, 255, 255, 0.3)
+  fill: rgba(255, 255, 255, 0.3);
 }
-
 
 .breadcrumbs-list {
   display: flex;
@@ -747,7 +744,7 @@ body {
 }
 
 .price-input-max {
-  border-radius: 0 4px 4px 0
+  border-radius: 0 4px 4px 0;
 }
 
 .price-label {
@@ -799,7 +796,7 @@ body {
 }
 
 .range-toggle:active {
-  background-color: #cccccc
+  background-color: #cccccc;
 }
 
 .range-toggle:disabled {
@@ -856,7 +853,6 @@ body {
   margin: 0;
 }
 
-
 .catalog-top {
   display: flex;
   align-items: center;
@@ -880,7 +876,7 @@ body {
 }
 
 .control:hover {
-  opacity: 0.6
+  opacity: 0.6;
 }
 
 .control-input:focus + .control-checkbox {
@@ -934,7 +930,6 @@ body {
   opacity: 0.3;
 }
 
-
 .hotel-list {
   display: grid;
   grid-template-columns: repeat(3, 340px);
@@ -974,7 +969,7 @@ body {
 .hotel-price {
   font-size: 18px;
   line-height: 21px;
-  text-align: right
+  text-align: right;
 }
 
 .hotel-item .button {
@@ -1049,7 +1044,7 @@ body {
 
 .pagination-link:active {
   background-color: #82b3d3;
-  color: rgba(255, 255, 255, 0.3)
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .pagination-current,
@@ -1194,11 +1189,9 @@ body {
   margin-right: 0;
 }
 
-
 .view-switch-item-active {
   border: 2px solid #000000;
 }
-
 
 .modal-container {
   position: fixed;
@@ -1329,12 +1322,10 @@ body {
   color: #ff5757;
 }
 
-
 .input-date-wrapper {
   position: relative;
   grid-column: 2 / -1;
 }
-
 
 .input-date-button {
   position: absolute;
@@ -1381,7 +1372,6 @@ body {
   cursor: pointer;
   border-radius: 4px;
 }
-
 
 .input-count-minus {
   left: 10px;
